@@ -1,0 +1,37 @@
+*** COMANDOS ***
+
+npm init				             --> Iniciar un proyecto en Node
+
+npm install                          --> Instalar dependecias de Node (despues de clonar un proyecto)
+npm install cypress --save-dev       --> Instalacion de Cypress (como dependecia de proyecto)
+
+npx cypress open                     --> Abrir app de Cypress
+npx cypress run                      --> Ejecutar todos los modulos en Consola
+npx cypress run --headed             --> Ejecutar todos los modulos desde el navegador
+npx cypress run --browser chrome     --> Ejecutar todos los modulos desde un navegador específico
+
+npx cypress run --spec "cypress\e2e\Seccion 2\ReferenceWindows.cy.js" --> Ejecutar un modulo en específico
+    
+npx cypress run --spec "cypress\e2e\Seccion 1\*"                      --> Ejecutar todos los modulos de una carpeta
+
+Ctrl + C                                        --> Detener app de Cypress
+
+npm install -D cypress-plugin-tab               --> Instalar plugin Tab
+
+npm install -D cypress-xpath                    --> Instalar plugin Xpath
+
+npm install --save-dev @4tw/cypress-drag-drop   --> Instalar plugin Drag and Drop
+
+npx cypress run --browser chrome --headed --spec "cypress\e2e\Seccion6\pageObjectModel.cy.js" --> Ejecutar test con Grabación de Video (en Chrome)
+
+npx cypress run --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
+
+=================================================================================================================================================
+
+*** SELECTORES ***
+
+    Id          --> #Id
+    Clases      --> .class
+    Atributos   --> [name=''], [type='']
+    Xpath       --> //xpath
+
