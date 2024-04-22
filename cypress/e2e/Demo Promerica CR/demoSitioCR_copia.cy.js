@@ -6,42 +6,6 @@ describe("Demo 2 - Automatizacion con Cypress Promerica CR", ()=> {
 
    var time = 1000
 
-   it(" Validacion de Titulo, Propiedades y Etiquetas Meta", ()=>{
-
-      let metaViewport = 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'
-      let description = 'Bienvenidos al nuevo sitio Promerica Costa Rica'
-      let keyWords = 'Promerica,Banco Promerica'
-      let author = 'Banco Promerica Costa Rica'
-      let ogUrl = 'https://promerica.fi.cr'
-      let ogImage = 'https://www.promerica.fi.cr/media/1004/promerica_cr_155x90png.png'
-
-      cy.visit("http://localhost:8090/")
-      cy.log('Sitio Promerica Costa Rica')
-      cy.wait(time)
-
-      // Propiedades
-      cy.title().should('eq','Banco Promerica Costa Rica | Grupo Promerica')
-      cy.wait(time)
-
-      cy.get('html').should('have.attr','lang','es')
-      cy.wait(time)
-
-      //cy.url().should('eq','https://promerica.fi.cr')
-
-      // Etiquetas Meta
-      cy.get('head meta[name=viewport]').should('have.attr','content', metaViewport)
-      cy.get('head meta[name=keywords]').should('have.attr','content', keyWords)
-      cy.get('head meta[name=description]').should('have.attr','content', description)
-      cy.get('head meta[name=author]').should('have.attr','content', author)
-      cy.get('head meta[property="og:url"').should('have.attr','content', ogUrl)
-      cy.get('head meta[property="og:image"').should('have.attr','content', ogImage)
-      cy.wait(time)
-
-      cy.get('head link[rel=canonical]').should('have.attr','href','http://localhost:8090/')
-      cy.wait(2000)
-
-   })
-
    it("Aserciones en Sección Tarjetas de Crédito", ()=>{
 
       cy.visit("http://localhost:8090/banca-de-personas/tarjetas-de-credito/")
