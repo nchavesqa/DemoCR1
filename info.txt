@@ -35,3 +35,5 @@ npx cypress run --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
     Atributos   --> [name=''], [type='']
     Xpath       --> //xpath
 
+
+git config user.name "your username" git config user.password "your password"
