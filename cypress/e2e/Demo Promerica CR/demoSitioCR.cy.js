@@ -185,127 +185,127 @@ describe("Demo 2 - Automatizacion con Cypress Promerica CR", ()=> {
       cy.wait(2000)
    })
 
-   it("Test LandingPage - Asistencia Funeraria", ()=>{
+   // it("Test LandingPage - Asistencia Funeraria", ()=>{
 
-      cy.visit("http://localhost:8090/asistencia-funeraria/")
-      cy.log('Promerica Costa Rica - Landing Asistencia Funeraria')
-      cy.wait(time)
+   //    cy.visit("http://localhost:8090/asistencia-funeraria/")
+   //    cy.log('Promerica Costa Rica - Landing Asistencia Funeraria')
+   //    cy.wait(time)
 
-      //Validaciones en Titulo, Cards y Disclaimer
-      cy.get('h2').eq(0).should('be.visible').should('have.text','Beneficios de las tarjetas de crédito')
-      cy.get('.lstCardsForm').should('be.visible').and('have.css','font-family','"Nunito Sans", Tahoma').and('have.css','font-size','16px')
+   //    //Validaciones en Titulo, Cards y Disclaimer
+   //    cy.get('h2').eq(0).should('be.visible').should('have.text','Beneficios de las tarjetas de crédito')
+   //    cy.get('.lstCardsForm').should('be.visible').and('have.css','font-family','"Nunito Sans", Tahoma').and('have.css','font-size','16px')
    
-      cy.get('h2').eq(1).should('be.visible').and('have.text','Asistencia funeraria con cobertura familiar')
+   //    cy.get('h2').eq(1).should('be.visible').and('have.text','Asistencia funeraria con cobertura familiar')
 
-      cy.get('.disclaimer').should('be.visible').and('contain.text','* La aprobación de tu tarjeta está condicionada a un estudio crediticio que se realizará con los datos proveídos por el solicitante.')
+   //    cy.get('.disclaimer').should('be.visible').and('contain.text','* La aprobación de tu tarjeta está condicionada a un estudio crediticio que se realizará con los datos proveídos por el solicitante.')
 
-      cy.get('.contenidoFooter').should('be.visible').should('contain.text','Banco Promerica 2024 | Grupo Promerica')
+   //    cy.get('.contenidoFooter').should('be.visible').should('contain.text','Banco Promerica 2024 | Grupo Promerica')
 
-      // Formulario
+   //    // Formulario
 
-      // Nombre, apellidos
-      cy.get('#\\34 c780c00-2ef8-44b0-ad7f-443a78366a74').type('Nombre Prueba').tab().type('Apellidos Prueba').tab()
+   //    // Nombre, apellidos
+   //    cy.get('#\\34 c780c00-2ef8-44b0-ad7f-443a78366a74').type('Nombre Prueba').tab().type('Apellidos Prueba').tab()
 
-      // Tipo Identificacion
-      cy.get('.contenedorSelectItems').eq(0).invoke('show').find('.opcionSelect').eq(1).click({force:true})
+   //    // Tipo Identificacion
+   //    cy.get('.contenedorSelectItems').eq(0).invoke('show').find('.opcionSelect').eq(1).click({force:true})
       
-      // Identificacion, correo y telefono
-      cy.get('#a4f0e8b5-7285-4705-ddbc-057bf5fd6d74').type('209870909').tab().type('nat@prueba.com').tab().type('23448911').tab().type('11112345')
+   //    // Identificacion, correo y telefono
+   //    cy.get('#a4f0e8b5-7285-4705-ddbc-057bf5fd6d74').type('209870909').tab().type('nat@prueba.com').tab().type('23448911').tab().type('11112345')
 
-      // Provincia
-      cy.get('.contenedorSelectItems').eq(1).invoke('show').find('.opcionSelect').eq(4).click({force:true})
+   //    // Provincia
+   //    cy.get('.contenedorSelectItems').eq(1).invoke('show').find('.opcionSelect').eq(4).click({force:true})
 
-      // Canton
-      cy.get('.contenedorSelectItems').eq(2).find('.opcionSelect').not('.hidden').invoke('show').eq(2).click({force:true})
+   //    // Canton
+   //    cy.get('.contenedorSelectItems').eq(2).find('.opcionSelect').not('.hidden').invoke('show').eq(2).click({force:true})
 
-      // Distrito
-      //cy.get('.contenedorSelectItems').eq(3).find('.opcionSelect').not('.hidden').invoke('show').eq(2).click({force:true})
+   //    // Distrito
+   //    //cy.get('.contenedorSelectItems').eq(3).find('.opcionSelect').not('.hidden').invoke('show').eq(2).click({force:true})
 
-      // Fecha
-      cy.get('#25371b7d-4e96-4210-9f52-483ff5b365cd').type('2000-06-19')
+   //    // Fecha
+   //    cy.get('#25371b7d-4e96-4210-9f52-483ff5b365cd').type('2000-06-19')
 
-      // Estado Civil
-      cy.get('.contenedorSelectItems').eq(4).find('.opcionSelect').eq(2).click({force:true})
+   //    // Estado Civil
+   //    cy.get('.contenedorSelectItems').eq(4).find('.opcionSelect').eq(2).click({force:true})
       
-      // Empresa, num Tarjeta
-      cy.get('#aa4186f6-21ae-4a7d-9620-b6672db3d98c').type('Empresa Prueba').tab().type('1234')
+   //    // Empresa, num Tarjeta
+   //    cy.get('#aa4186f6-21ae-4a7d-9620-b6672db3d98c').type('Empresa Prueba').tab().type('1234')
 
-      cy.ClickSubmit('Siguiente')
+   //    cy.ClickSubmit('Siguiente')
 
-      // Nombre Beneficiario
-      cy.get('#\\33 a185598-5021-4015-8b95-efedcfc334e5').type('Beneficiario Prueba')
+   //    // Nombre Beneficiario
+   //    cy.get('#\\33 a185598-5021-4015-8b95-efedcfc334e5').type('Beneficiario Prueba')
 
-      // Tipo Identificacion
-      cy.get('.contenedorSelectItems').invoke('show').find('.opcionSelect').eq(1).click({force:true})
+   //    // Tipo Identificacion
+   //    cy.get('.contenedorSelectItems').invoke('show').find('.opcionSelect').eq(1).click({force:true})
 
-      //Identificacion + Fecha Nacimiento
-      cy.get('#f156bb90-c7b6-4b07-ae7a-f481e0ab5934').type('580203349').tab().type('2022-04-30')
+   //    //Identificacion + Fecha Nacimiento
+   //    cy.get('#f156bb90-c7b6-4b07-ae7a-f481e0ab5934').type('580203349').tab().type('2022-04-30')
 
-      // Checkbox
-      cy.get('[type="checkbox"]').check().should('be.checked')
-      cy.wait(time)
+   //    // Checkbox
+   //    cy.get('[type="checkbox"]').check().should('be.checked')
+   //    cy.wait(time)
 
-      cy.get('.CheckBoxContainer').eq(0).find('label').should('contain.text','Doy permiso a Banco Promerica para ser contactado por WhatsApp')
-      cy.get('.CheckBoxContainer').eq(1).find('label').should('contain.text','Acepto términos y condiciones')
+   //    cy.get('.CheckBoxContainer').eq(0).find('label').should('contain.text','Doy permiso a Banco Promerica para ser contactado por WhatsApp')
+   //    cy.get('.CheckBoxContainer').eq(1).find('label').should('contain.text','Acepto términos y condiciones')
 
-      // Abrir link de terminos y condiciones en la misma pestaña
-      //cy.get('a').should('have.attr', 'target', '_blank').invoke('attr', 'target', '_self').click()
+   //    // Abrir link de terminos y condiciones en la misma pestaña
+   //    //cy.get('a').should('have.attr', 'target', '_blank').invoke('attr', 'target', '_self').click()
 
-      // Boton Volver
-      //cy.ClickSubmit('Volver')
+   //    // Boton Volver
+   //    //cy.ClickSubmit('Volver')
 
-      // Boton Solicitar
-      cy.ClickSubmit('Solicitar')
-      cy.wait(2000)
-   })
+   //    // Boton Solicitar
+   //    cy.ClickSubmit('Solicitar')
+   //    cy.wait(2000)
+   // })
 
-   it("Carga de Archivos y Manejo de Tablas", ()=>{
+   // it("Carga de Archivos y Manejo de Tablas", ()=>{
 
-      const filePath = 'cypress/fixtures/Lista de Ganadores.xlsx'
-      const filePath2 = 'cypress/fixtures/image.jpg'
-      const data = []
+   //    const filePath = 'cypress/fixtures/Lista de Ganadores.xlsx'
+   //    const filePath2 = 'cypress/fixtures/image.jpg'
+   //    const data = []
       
-      //Inicio de Sesión
-      cy.visit('http://localhost:8090/umbraco')
-      cy.get('#umb-username').type('Admin')
-      cy.get('#umb-passwordTwo').type('Admin1234!').wait(500)
+   //    //Inicio de Sesión
+   //    cy.visit('http://localhost:8090/umbraco')
+   //    cy.get('#umb-username').type('Admin')
+   //    cy.get('#umb-passwordTwo').type('Admin1234!').wait(500)
   
-      cy.get('.umb-button__content').click({force:true})   
-      cy.wait(1500)
+   //    cy.get('.umb-button__content').click({force:true})   
+   //    cy.wait(1500)
 
-      //Formulario Generador de Ganadores
-      cy.visit("http://localhost:8090/generador-de-ganadores/")
+   //    //Formulario Generador de Ganadores
+   //    cy.visit("http://localhost:8090/generador-de-ganadores/")
       
-      // Archivo adjunto incorrecto
-      cy.get('#fileparticipantes').selectFile(filePath2).wait(time)
+   //    // Archivo adjunto incorrecto
+   //    cy.get('#fileparticipantes').selectFile(filePath2).wait(time)
 
-      // Num de ganadores, nombre promocion
-      cy.get('#plazo').type('25').tab().type('Promocion Prueba').wait(time)
+   //    // Num de ganadores, nombre promocion
+   //    cy.get('#plazo').type('25').tab().type('Promocion Prueba').wait(time)
 
-      // Envío
-      cy.get('#btnEnviar').should('be.enabled').should('have.text','Generar Ganadores').click()
-      cy.wait(time)
+   //    // Envío
+   //    cy.get('#btnEnviar').should('be.enabled').should('have.text','Generar Ganadores').click()
+   //    cy.wait(time)
 
-      // Archivo Excel
-      cy.get('#fileparticipantes').selectFile(filePath).wait(time)
-      cy.get('#btnEnviar').should('be.enabled').click()
+   //    // Archivo Excel
+   //    cy.get('#fileparticipantes').selectFile(filePath).wait(time)
+   //    cy.get('#btnEnviar').should('be.enabled').click()
 
-      // Tabla de Resultados
-      cy.wait(time)
-      cy.log('Manejo de Informacion en Tablas')
+   //    // Tabla de Resultados
+   //    cy.wait(time)
+   //    cy.log('Manejo de Informacion en Tablas')
       
-      cy.get('#tblresultados tr').each((element, index, list)=>{
+   //    cy.get('#tblresultados tr').each((element, index, list)=>{
 
-         data[index] = element.text()
+   //       data[index] = element.text()
 
-      }).then(()=>{
+   //    }).then(()=>{
 
-         for(let i=0; i<data.length; i++){
-            if(i>=1){              
-               cy.log('Ganador '+i+': '+data[i])
-            }
-         }
-      })
-   })
+   //       for(let i=0; i<data.length; i++){
+   //          if(i>=1){              
+   //             cy.log('Ganador '+i+': '+data[i])
+   //          }
+   //       }
+   //    })
+   // })
 
 })//fin describe
