@@ -33,3 +33,12 @@ Cypress.Commands.add('ClosePopUp',(selector)=>{
     cy.get(selector).click({force: true})
 })
 
+const createCustomErrorMessage = (error, runnableObj) => {
+    const messageArr = [
+        `Context: ${runnableObj.parent.title}`,
+        `Test: ${runnableObj.title}`,
+        `----------`,
+        `${error.message}`
+    ]
+    return messageArr.join('\n')
+}
