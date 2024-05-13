@@ -112,7 +112,7 @@ describe("Demo 2 - Automatizacion con Cypress Promerica CR", ()=> {
       cy.wait(2000)
    })
 
-   it("MouseOver y Pruebas Chatbot", ()=>{
+   it.only("MouseOver y Pruebas Chatbot", ()=>{
 
       Cypress.on("uncaught:exception", (e, runnable) => {
          return true;
@@ -130,7 +130,9 @@ describe("Demo 2 - Automatizacion con Cypress Promerica CR", ()=> {
       // Página Otros Servicios - Error
       cy.xpath('//*[@id="main_nav"]/div/ul/li[2]/ul').invoke('show').wait(200)
       cy.xpath('//*[@id="main_nav"]/div/ul/li[2]/ul/li[7]/a').click({force:true})
-      cy.wait(time)
+      cy.request('http://localhost:8090/banca-de-personas/otros-servicios/').should((response)=>{
+         expect(response.status).to.eq(200)
+     })
 
       cy.go('back')// volver a Home
       cy.wait(time)

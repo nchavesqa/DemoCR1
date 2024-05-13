@@ -26,6 +26,8 @@ npx cypress run --browser chrome --headed --spec "cypress\e2e\Seccion6\pageObjec
 
 npx cypress run --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
 
+lambdatest-cypress run --cy="--record;--key b44b7fbf-94e2-4794-b9e8-29c9566965f2"
+
 =================================================================================================================================================
 
 *** SELECTORES ***

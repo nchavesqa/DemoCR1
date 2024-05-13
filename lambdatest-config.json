@@ -1,0 +1,38 @@
+{
+   "lambdatest_auth": {
+      "username": "jcastilloatomsoluciones",
+      "access_key": "pZHVhe1bT3GpWXsVyRYLX3FcB8bEqs4gJyggbAqlYoxOiwsx4f"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      }
+   ],
+   "run_settings": {
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "Integracion Lambdatest",
+      "parallels": 2,
+      "specs": "./cypress/e2e/Demo Promerica CR/*",
+      "ignore_files": "",
+      "network": false,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "10"
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}
