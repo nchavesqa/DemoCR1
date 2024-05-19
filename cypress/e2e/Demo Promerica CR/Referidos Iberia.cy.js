@@ -13,19 +13,10 @@ describe('Landing Referidos Iberia', ()=> {
         cy.wait(time)
     })
 
-    it.only('Referidos Iberia - Camino feliz', ()=>{
+    it('Referidos Iberia - Camino feliz', ()=>{
 
         cy.get('#c559d483-4aab-4e5e-b4e7-2395f4e764af').type('Natalia Chaves').tab().type('12341234').tab().type('nat@prueba.com')
         cy.wait(time)
-        
-        cy.get('#\\34 8012b84-6eb4-4120-881b-501a5b2eaa56-error').should('not.be.visible').then(()=>{
-            throw new Error('Error en validación del campo IB Plus')
-        })
-
-        // cy.get('#\\34 8012b84-6eb4-4120-881b-501a5b2eaa56-error').should($el => {
-        //     const errorMessage = createCustomErrorMessage(new Error(`Expected element to be visible: ${$el.selector}`), this)
-        //     expect($el).to.be.not.visible(errorMessage)
-        // })
 
         cy.get('.btn').click().click({force:true})
         cy.wait(time)
@@ -48,7 +39,7 @@ describe('Landing Referidos Iberia', ()=> {
         cy.get('#botonVolver').click({force:true})
     })
 
-    it('Referidos Iberia - Mensajes de Error por Datos Incorrectos', ()=>{
+    it.only('Referidos Iberia - Mensajes de Error por Datos Incorrectos', ()=>{
 
         cy.get('#c559d483-4aab-4e5e-b4e7-2395f4e764af').type('Natalia')
         cy.get('#\\34 8012b84-6eb4-4120-881b-501a5b2eaa56').click({force:true})
@@ -59,7 +50,7 @@ describe('Landing Referidos Iberia', ()=> {
         cy.get('#\\34 8012b84-6eb4-4120-881b-501a5b2eaa56-error').should('be.visible').and('contain.text','Por favor, introduce solo números y evita caracteres especiales. Además, asegúrate de no finalizar con un espacio.')
         
         cy.get('#\\33 4930f22-f411-424d-ad47-3159f9b1336b').type('nat@prueba')
-        cy.get('.btn').click({force:true})
+        cy.get('.btn').click({force:true}).click({force:true})
         cy.get('#\\33 4930f22-f411-424d-ad47-3159f9b1336b-error').should('be.visible').and('contain.text','Formato de correo electrónico incorrecto.')
         cy.wait(time)
 

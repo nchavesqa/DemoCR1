@@ -114,10 +114,6 @@ describe("Demo 2 - Automatizacion con Cypress Promerica CR", ()=> {
 
    it.only("MouseOver y Pruebas Chatbot", ()=>{
 
-      Cypress.on("uncaught:exception", (e, runnable) => {
-         return true;
-      });
-
       cy.visit("http://localhost:8090/")
       cy.log('Promerica Costa Rica - Menu Principal')
       cy.wait(time)

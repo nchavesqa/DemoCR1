@@ -14,6 +14,8 @@ module.exports = defineConfig({
     defaultCommandTimeout: 5000,
     pageLoadTimeout: 20000,
 
+    reporter: "mochawesome"
+
   },
 
 });

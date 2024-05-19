@@ -22,6 +22,8 @@ npm install -D cypress-xpath                    --> Instalar plugin Xpath
 
 npm install --save-dev @4tw/cypress-drag-drop   --> Instalar plugin Drag and Drop
 
+npm install xml2js
+
 npx cypress run --browser chrome --headed --spec "cypress\e2e\Seccion6\pageObjectModel.cy.js" --> Ejecutar test con Grabación de Video (en Chrome)
 
 npx cypress run --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
@@ -39,3 +41,33 @@ lambdatest-cypress run --cy="--record;--key b44b7fbf-94e2-4794-b9e8-29c9566965f2
 
 
 git config user.name "your username" git config user.password "your password"
+
+
+
+
+
+
+INGRESO NOMBRE CORRECTO:
+    NO TIRA ADVERTENCIA: OK
+    TIRA ADVERTENCIA: DEBE MARCAR ERROR
+
+INGRESO NUMEROS
+    NO TIRA ADVERTENCIA: DEBE MARCAR UN ERROR    
+    TIRA ADVERTENCIA: OK
+
+INGRESO CARACTERES
+    NO TIRA ADVERTENCIA: DEBE MARCAR ERROR DE QUE NO HAY MENSAJE DE ADVERTENCIA
+    TIRA ADVERTENCIA: OK
+
+
+
+
+
+
+
+
+
+
+
+
+
