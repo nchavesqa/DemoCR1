@@ -26,7 +26,7 @@ npm install xml2js
 
 npx cypress run --browser chrome --headed --spec "cypress\e2e\Seccion6\pageObjectModel.cy.js" --> Ejecutar test con Grabación de Video (en Chrome)
 
-npx cypress run --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
+npx cypress run --spec "cypress\e2e\Referidos Iberia\*" --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
 
 lambdatest-cypress run --cy="--record;--key b44b7fbf-94e2-4794-b9e8-29c9566965f2"
 

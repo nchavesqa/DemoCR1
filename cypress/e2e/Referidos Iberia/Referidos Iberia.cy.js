@@ -15,7 +15,7 @@ describe('Referidos Iberia - Datos Correctos', { testIsolation: false }, ()=> {
         cy.ifExistsErrorMessage('#c559d483-4aab-4e5e-b4e7-2395f4e764af-error','Nombre completo','no permite ingresar el formato correcto')
     })
 
-    it('Validación campo IB Plus', ()=>{ // CAMPO NUMERICO
+    it('Validación campo IB Plus', ()=>{
         cy.get('#\\34 8012b84-6eb4-4120-881b-501a5b2eaa56').as('IB Plus').type('12341234').tab()
         cy.wait(time)
         cy.ifExistsErrorMessage('#\\34 8012b84-6eb4-4120-881b-501a5b2eaa56-error','IB Plus','no permite ingresar el formato correcto')

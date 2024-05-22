@@ -1,4 +1,3 @@
-///<reference types='Cypress'/>
 require('cypress-xpath')
 require('cypress-plugin-tab')
 
