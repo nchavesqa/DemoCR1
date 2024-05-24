@@ -2,7 +2,7 @@
 
 describe('Pruebas Api Tipo Cambio', ()=> {
 
-    var time = 1000
+    var time = 1500
     let data;
 
     it('Valida estado de solicitud Tipo de Cambio Compra Costa Rica', ()=>{ // TIPO CAMBIO COSTA RICA

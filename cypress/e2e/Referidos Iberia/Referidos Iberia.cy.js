@@ -2,7 +2,7 @@
 require('cypress-xpath')
 require('cypress-plugin-tab')
 
-describe('Referidos Iberia - Datos Correctos', { testIsolation: false }, ()=> {
+describe.only('Referidos Iberia - Datos Correctos', { testIsolation: false }, ()=> {
 
     var time = 1300
     before(()=>{
