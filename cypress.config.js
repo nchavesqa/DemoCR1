@@ -12,9 +12,7 @@ module.exports = defineConfig({
     viewportWidth: 1600,
     viewportHeight: 920,
     defaultCommandTimeout: 5000,
-    pageLoadTimeout: 20000,
-
-    reporter: "mochawesome"
+    pageLoadTimeout: 20000
 
   },
 

@@ -28,16 +28,21 @@ npx cypress run --browser chrome --headed --spec "cypress\e2e\Seccion6\pageObjec
 
 npx cypress run --spec "cypress\e2e\Referidos Iberia\*" --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
 
-=================================
+==========================================
 
 npx cypress run --browser chrome --headed --spec "cypress\e2e\Referidos Iberia\*" --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
 
 npx cypress run --spec "cypress\e2e\Referidos Iberia\*" --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
 npx cypress run --spec "cypress\e2e\Asistencia Funeraria\*" --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
+npx cypress run --spec "cypress\e2e\api TipoCambio\*" --record --key b44b7fbf-94e2-4794-b9e8-29c9566965f2
+
 
 lambdatest-cypress run
+"specs": "./cypress/e2e/Asistencia Funeraria/Asistencia Funeraria2.cy.js",
+"specs": "./cypress/e2e/Referidos Iberia/Referidos Iberia.cy.js",
+"specs": "./cypress/e2e/api TipoCambio/apiTipoCambio.cy.js"
 
-=================================
+==========================================
 
 
 *** SELECTORES ***
@@ -50,22 +55,6 @@ lambdatest-cypress run
 
 git config user.name "your username" git config user.password "your password"
 
-
-
-
-
-
-INGRESO NOMBRE CORRECTO:
-    NO TIRA ADVERTENCIA: OK
-    TIRA ADVERTENCIA: DEBE MARCAR ERROR
-
-INGRESO NUMEROS
-    NO TIRA ADVERTENCIA: DEBE MARCAR UN ERROR    
-    TIRA ADVERTENCIA: OK
-
-INGRESO CARACTERES
-    NO TIRA ADVERTENCIA: DEBE MARCAR ERROR DE QUE NO HAY MENSAJE DE ADVERTENCIA
-    TIRA ADVERTENCIA: OK
 
 
 

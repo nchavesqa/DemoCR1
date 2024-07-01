@@ -4,14 +4,18 @@ require('cypress-plugin-tab')
 
 describe.only('Referidos Iberia - Datos Correctos', { testIsolation: false }, ()=> {
 
-    var time = 1300
+    var time = 1500
     before(()=>{
         cy.visit('http://localhost:8090/formulario-referidos-iberia/')
     })
 
+    beforeEach(()=>{
+        //cy.viewport('ipad-mini')
+        // cy.viewport('iphone-6+')
+    })
+
     it('Validación campo Nombre completo', ()=>{
         cy.get('#c559d483-4aab-4e5e-b4e7-2395f4e764af').as('Nombre completo').type('Natalia Chaves').tab()
-        cy.wait(time)
         cy.ifExistsErrorMessage('#c559d483-4aab-4e5e-b4e7-2395f4e764af-error','Nombre completo','no permite ingresar el formato correcto')
     })
 

@@ -52,7 +52,7 @@ describe("Pruebas en Asistencia Funeraria", ()=> {
         cy.get('.flatpickr-prev-year > img').click();
         cy.get('.flatpickr-prev-year > img').click();
         cy.get('.flatpickr-prev-year > img').click();
-        cy.get('[aria-label="May 12, 1999"]').click();
+        cy.get('[aria-label="Jun 12, 1999"]').click();
         cy.get('#c865c3ea-87bc-48d6-a9af-69607fc3461d > :nth-child(1)').click();
         cy.get(':nth-child(11) > .umbraco-forms-field > .umbraco-forms-field-wrapper > .Select-Customizado > .select-selected').click();
         cy.get(':nth-child(11) > .umbraco-forms-field > .umbraco-forms-field-wrapper > .Select-Customizado > .select-items > .contenedorSelectItems > :nth-child(3)').click();
@@ -107,7 +107,7 @@ describe("Pruebas en Asistencia Funeraria", ()=> {
         /* ==== End Cypress Studio ==== */
     });
 
-    it('Prueba Asistencia - Test Individuales', function(){
+    it.only('Prueba Asistencia - Test Individuales', function(){
 
         /* ==== Generated with Cypress Studio ==== */
         cy.visit('http://localhost:8090/asistencia-funeraria-1/');
@@ -196,7 +196,7 @@ describe("Pruebas en Asistencia Funeraria", ()=> {
         cy.get('.flatpickr-prev-year > img').click();
         cy.get('.flatpickr-prev-year > img').click();
         cy.get('.flatpickr-prev-year > img').click();
-        cy.get('[aria-label="Mar 20, 2012"]').click();
+        cy.get('[aria-label="Abr 20, 2012"]').click();
         cy.get('.SecondaryButton').click();
         cy.get('#date_25371b7d_4e96_4210_9f52_483ff5b365cd').click();
         cy.get('.SecondaryButton').click();
