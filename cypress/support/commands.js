@@ -26,7 +26,7 @@ Cypress.Commands.add('ClosePopUp',(selector)=>{
     cy.get(selector).click({force: true})
 })
 
-function ifExistsErrorMessage (selector, label, errorMessage) {// Manejar excepcion en caso de no encontrar un elemento en el DOM
+function ifExistsErrorMessage (selector, label, errorMessage) {
 
     cy.document().then(($document) => {
         const documentResult = $document.querySelectorAll(selector)

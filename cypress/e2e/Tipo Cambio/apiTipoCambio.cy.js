@@ -19,8 +19,6 @@ describe('Pruebas Api Tipo Cambio', ()=> {
         })
     })
 
-
-
     it('Consulta Tipo de Cambio Compra Costa Rica', ()=>{ // TIPO CAMBIO COSTA RICA
         
         for (let index = 0; index <= 10; index++) {

@@ -3,7 +3,9 @@ node_modules/
 *.jpg
 *.png
 *.xlsx
+*.log
 videos/
 screenshots/
 mochawesome-report/
 downloads/
+.lambdatest/
